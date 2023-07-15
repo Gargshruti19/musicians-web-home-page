@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes example{
+    0%{
+        background-image: url(./wave.jpg);
+    }
+    25%{
+        background-image: url(./headphone.jpg);
+    }
+    50%{
+        background-image: url(./girlrock.jpg);
+    }
+    75%{
+        background-image: url(./musicband.jpg);
+    }
+    100%{
+        background-image: url(./wave.jpg);
+    }
+}
+body{
+    background-image: url(./musicband.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+header{
+   height: 4em;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 3em;
+}
+img{
+    height: 3em;
+    width: 7em;
+    margin: 0.5em 4em;
+    float: left;
+}
+img:hover{
+    height: 3.2em ;
+    width: 7.4em;
+    border: 0.1em solid yellow;
+}
+
+.navbar li{
+    margin-top: 1em;
+    padding-right: 4em;
+    list-style-type: none;
+}
+.navbar li a{
+        color: white;
+        text-decoration: none;
+        font-size: 2em;
+}
+.navbar li a:hover{
+    color: yellow;
+    font-size: 2.4em;
+    
+    
+}
+.music-band{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+     margin-top: 3em;
+     padding: 5em;
+     padding-left: 8em;
+}
+.music-band h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 5em;
+    margin-bottom: 0.5em;
+
+}
+button{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 0.6em;
+    
+}
+button:hover{
+    padding: 0.8em;
+    transition: all 2s ease-out;
+    transform: rotate(30deg);
+}
+
+i{
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+h1:hover{
+    font-size: 5.2em;
+}
